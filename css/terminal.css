@@ -1,0 +1,22 @@
+.terminal {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  margin-bottom: 2rem;
+  color: #4ade80;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  display: inline-block;
+}
+
+.terminal::before {
+  content: "> ";
+  color: var(--primary);
+}
+
+.typing {
+  display: inline-block;
+  border-right: 3px solid #4ade80;
+  animation: blink 0.7s step-end infinite;
+}

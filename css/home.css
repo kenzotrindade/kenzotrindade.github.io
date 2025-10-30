@@ -1,0 +1,29 @@
+/* Sections Base */
+section {
+  min-height: 100vh;
+  padding: 8rem 5%;
+  position: relative;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home-content {
+  text-align: left;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-desc {
+  max-width: 650px;
+  margin: 0 0 3rem 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7);
+}

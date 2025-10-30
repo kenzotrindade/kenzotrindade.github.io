@@ -1,0 +1,69 @@
+/* Floating Shapes */
+.floating-shapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.1;
+  animation: float 20s infinite;
+}
+
+.shape:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--primary);
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.shape:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--secondary), var(--accent));
+  top: 60%;
+  left: 80%;
+  border-radius: 50%;
+  animation-delay: 2s;
+}
+
+.shape:nth-child(3) {
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--accent);
+  top: 70%;
+  left: 20%;
+  transform: rotate(45deg);
+  animation-delay: 4s;
+}
+
+/* Scroll Indicator */
+.scroll {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 50px;
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.scroll::before {
+  content: "";
+  width: 6px;
+  height: 10px;
+  background: var(--primary);
+  border-radius: 3px;
+  animation: scroll 2s infinite;
+}

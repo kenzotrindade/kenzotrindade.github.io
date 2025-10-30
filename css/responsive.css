@@ -1,0 +1,97 @@
+/* Responsive Design */
+@media (max-width: 1024px) {
+  section {
+    padding: 6rem 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 5%;
+  }
+
+  nav ul {
+    gap: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding: 5rem 5%;
+  }
+
+  .home-content {
+    text-align: center;
+  }
+
+  .home-desc {
+    margin: 0 auto 3rem;
+  }
+
+  .cta-content {
+    justify-content: center;
+  }
+
+  .terminal {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+  .shape {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .glitch {
+    font-size: 2rem;
+  }
+
+  .terminal {
+    font-size: 0.8rem;
+  }
+
+  .home-desc {
+    font-size: 1rem;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .skill-card,
+  .project-card,
+  .contact-card {
+    padding: 1.5rem;
+  }
+}
