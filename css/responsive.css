@@ -1,13 +1,13 @@
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   section {
     padding: 6rem 4%;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   nav {
-    padding: 1rem 5%;
+    padding: 1rem 20%;
   }
 
   nav ul {
@@ -21,6 +21,30 @@
 
   section {
     padding: 5rem 5%;
+  }
+
+  .skill-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .project-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tech-skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .project-links {
+    display: flex;
+    justify-content: center;
   }
 
   .home-content {
@@ -64,7 +88,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .glitch {
     font-size: 2rem;
   }
