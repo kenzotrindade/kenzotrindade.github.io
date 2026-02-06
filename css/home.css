@@ -5,6 +5,10 @@ section {
   position: relative;
 }
 
+footer {
+  min-height: 100vh;
+}
+
 /* Home Section */
 #home {
   display: flex;
