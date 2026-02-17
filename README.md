@@ -58,7 +58,7 @@ The website is live and can be accessed at:
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/kenzotrindade/kenzotrindade.github.io.git](https://github.com/kenzotrindade/kenzotrindade.github.io.git)
+   git clone https://github.com/kenzotrindade/kenzotrindade.github.io.git
 2. Open the project folder:
    ```bash
    cd kenzotrindade.github.io
