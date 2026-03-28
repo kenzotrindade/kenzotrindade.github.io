@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+:root {
+  --primary-color: #e84a4a;
+  --secondary-color: #efefef;
+  --title-font: "Big Shoulders Display", sans-serif;
+  --text-font: "Iceland", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: var(--secondary-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 8vw;
+  align-items: center;
+}
+
+.nameTitle a {
+  font-family: var(--title-font);
+  text-decoration: none;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 150px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.nameTitle a:hover {
+  color: var(--secondary-color);
+}
+
+.content {
+  font-family: var(--text-font);
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+}
+
+.contentTitle h1 {
+  font-size: 42px;
+  font-weight: normal;
+}
+
+.contentText {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.contentText p {
+  font-size: 24px;
+}
+
+.contentButton a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 32px;
+  border: 1px var(--primary-color) solid;
+  padding: 12px 24px;
+  transition: 0.5s;
+}
+
+.contentButton a:hover {
+  color: var(--secondary-color);
+  border: 1px var(--secondary-color) solid;
+}
