@@ -22,6 +22,15 @@ body {
   min-height: 100vh;
 }
 
+#vanta-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .navbar {
   top: 0;
   position: sticky;
@@ -139,4 +148,36 @@ body {
 .content-action a:hover {
   color: var(--secondary-color);
   border: 1px var(--secondary-color) solid;
+}
+
+.skills-section,
+.projects-section,
+.contact-section {
+  padding: 120px 5vw;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 72px;
+}
+
+.section-header p {
+  font-family: var(--text-font);
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+
+.section-header h2 {
+  font-family: var(--title-font);
+  font-size: 72px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-rule {
+  flex: 1;
+  height: 1px;
+  background: var(--secondary-color);
 }
