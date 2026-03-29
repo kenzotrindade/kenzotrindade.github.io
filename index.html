@@ -4,25 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kenzo Trindade</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Iceland&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <div id="vanta-bg"></div>
     <header class="navbar">
-      <div class="navbar-logo">
-        <a href="/">Dev./</a>
-      </div>
-
-      <nav class="navbar-links" aria-label="Navigation principale">
+      <div class="navbar-logo"><a href="/">Dev./</a></div>
+      <nav class="navbar-links">
         <ul>
           <li><a href="#home">Accueil</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -32,45 +26,312 @@
       </nav>
     </header>
 
-    <main id="home">
-      <section class="home-section">
+    <main>
+      <section id="home" class="home-section">
         <div class="container">
           <header class="home-title">
-            <a href="https://github.com/" target="_blank">
+            <a href="https://github.com/kenzotrindade" target="_blank">
               <span>K</span>enzo <br /><span>T</span>rindade
             </a>
           </header>
-
           <article class="home-content">
-            <div class="content-header">
-              <h1>Bienvenue sur mon portfolio.</h1>
-            </div>
+            <h1>Bienvenue sur mon portfolio.</h1>
+            <p>
+              Développeur full stack passionné par l'univers Cybersécurité<br />Étudiant
+              en première année de Bachelor à Coda.
+            </p>
+            <a href="#projects" class="btn-primary">Entrer dans le système</a>
+          </article>
+        </div>
+      </section>
 
-            <div class="content-body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                <br />
-                Lorem ipsum dolor sit amet consectetur.
-              </p>
+      <section id="skills" class="skills-section">
+        <header class="section-header">
+          <p>01</p>
+          <h2>Compétences</h2>
+          <hr class="section-rule" />
+        </header>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <span class="skill-bg-word">Frontend</span>
+            <h3 class="skill-cat">Frontend</h3>
+            <div class="skill-chips">
+              <span class="skill-chip"><i class="dot"></i>HTML</span>
+              <span class="skill-chip"><i class="dot"></i>CSS</span>
+              <span class="skill-chip"><i class="dot"></i>TypeScript</span>
+              <span class="skill-chip"><i class="dot"></i>React</span>
+              <span class="skill-chip"><i class="dot"></i>Tailwind</span>
+              <span class="skill-chip"><i class="dot"></i>WordPress</span>
+              <span class="skill-chip"><i class="dot"></i>UI / UX</span>
+              <span class="skill-chip"><i class="dot"></i>Figma</span>
             </div>
-
-            <div class="content-action">
-              <a href="#projects" class="btn-primary">Entrer dans le système</a>
+          </article>
+          <article class="skill-card">
+            <span class="skill-bg-word">Backend</span>
+            <h3 class="skill-cat">Backend</h3>
+            <div class="skill-chips">
+              <span class="skill-chip"><i class="dot"></i>Python</span>
+              <span class="skill-chip"><i class="dot"></i>SQL</span>
+              <span class="skill-chip"><i class="dot"></i>Postgre</span>
+              <span class="skill-chip"><i class="dot"></i>MariaBD</span>
+              <span class="skill-chip"><i class="dot"></i>MySQL</span>
+              <span class="skill-chip"><i class="dot"></i>PHP</span>
+              <span class="skill-chip"><i class="dot"></i>Java</span>
+              <span class="skill-chip"><i class="dot"></i>C</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <span class="skill-bg-word">Autre</span>
+            <h3 class="skill-cat">Autre</h3>
+            <div class="skill-chips">
+              <span class="skill-chip"><i class="dot"></i>Docker</span>
+              <span class="skill-chip"><i class="dot"></i>Git</span>
+              <span class="skill-chip"><i class="dot"></i>Vite</span>
+              <span class="skill-chip"><i class="dot"></i>Node.js</span>
+              <span class="skill-chip"><i class="dot"></i>FastAPI</span>
+              <span class="skill-chip"><i class="dot"></i>Méthodes Agiles</span>
+              <span class="skill-chip"><i class="dot"></i>SCRUM</span>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="skills-section">
-        <div class="section-header">
-          <p>01</p>
-          <h2>Compétences</h2>
-          <div class="section-rule"></div>
+      <section id="projects" class="projects-section">
+        <header class="section-header">
+          <p>02</p>
+          <h2>Projets</h2>
+          <hr class="section-rule" />
+        </header>
+        <div class="folders-row">
+          <article class="folder" onclick="toggleFolder(this)">
+            <header class="folder-tab">
+              <span class="folder-tab-dot"></span>001
+            </header>
+            <div class="folder-body">
+              <span class="folder-bg">Nexus Solutions</span>
+              <p class="folder-num">PROJ — 001</p>
+              <h3 class="folder-name">Nexus<br />Solutions</h3>
+              <div class="skill-chips project-chips">
+                <span class="skill-chip"><i class="dot"></i>HTML</span>
+                <span class="skill-chip"><i class="dot"></i>CSS</span>
+                <span class="skill-chip"><i class="dot"></i>PostgreSQL</span>
+                <span class="skill-chip"><i class="dot"></i>PHP</span>
+              </div>
+              <p class="folder-desc">
+                Une application de gestion le matériel informatique en temps
+                réel.
+              </p>
+              <a
+                class="folder-link"
+                href="https://github.com/kenzotrindade/Nexus_Solution"
+                target="_blank"
+                >Voir →</a
+              >
+            </div>
+          </article>
+          <article class="folder" onclick="toggleFolder(this)">
+            <header class="folder-tab">
+              <span class="folder-tab-dot"></span>002
+            </header>
+            <div class="folder-body">
+              <span class="folder-bg">RBAC</span>
+              <p class="folder-num">PROJ — 002</p>
+              <h3 class="folder-name">RBAC<br />Manager</h3>
+              <div class="skill-chips project-chips">
+                <span class="skill-chip"><i class="dot"></i>HTML</span>
+                <span class="skill-chip"><i class="dot"></i>CSS</span>
+                <span class="skill-chip"><i class="dot"></i>Javascript</span>
+                <span class="skill-chip"><i class="dot"></i>Typescript</span>
+              </div>
+              <p class="folder-desc">
+                Un gestionnaire limitant les permissions aux rôles sensibles
+                dans un système quelconque.
+              </p>
+              <a
+                class="folder-link"
+                href="https://github.com/kenzotrindade/RBAC-Manager"
+                target="_blank"
+                >Voir →</a
+              >
+            </div>
+          </article>
+          <article class="folder" onclick="toggleFolder(this)">
+            <header class="folder-tab">
+              <span class="folder-tab-dot"></span>003
+            </header>
+            <div class="folder-body">
+              <span class="folder-bg">Chess</span>
+              <p class="folder-num">PROJ — 003</p>
+              <h3 class="folder-name">Chess<br />Game</h3>
+              <div class="skill-chips project-chips">
+                <span class="skill-chip"><i class="dot"></i>HTML</span>
+                <span class="skill-chip"><i class="dot"></i>CSS</span>
+                <span class="skill-chip"><i class="dot"></i>Javascript</span>
+                <span class="skill-chip"><i class="dot"></i>SQL</span>
+                <span class="skill-chip"><i class="dot"></i>Node.js</span>
+              </div>
+              <p class="folder-desc">
+                Un jeu d'échec similaire à Chess.com entièrement redéveloppé à
+                ma façon.
+              </p>
+              <a
+                class="folder-link"
+                href="https://github.com/kenzotrindade/ChessGame"
+                target="_blank"
+                >Voir →</a
+              >
+            </div>
+          </article>
+          <article class="folder" onclick="toggleFolder(this)">
+            <header class="folder-tab">
+              <span class="folder-tab-dot"></span>004
+            </header>
+            <div class="folder-body">
+              <span class="folder-bg">VulnLab</span>
+              <p class="folder-num">PROJ — 004</p>
+              <h3 class="folder-name">Vuln<br />Lab</h3>
+              <div class="skill-chips project-chips">
+                <span class="skill-chip"><i class="dot"></i>React</span>
+                <span class="skill-chip"><i class="dot"></i>Typescript</span>
+                <span class="skill-chip"><i class="dot"></i>Vite</span>
+                <span class="skill-chip"><i class="dot"></i>Python</span>
+                <span class="skill-chip"><i class="dot"></i>FastAPI</span>
+              </div>
+              <p class="folder-desc">
+                Un scanner de vulnérabilités de site web complètement
+                automatique.
+              </p>
+              <a
+                class="folder-link"
+                href="https://github.com/kenzotrindade/VulnLab"
+                target="_blank"
+                >Voir →</a
+              >
+            </div>
+          </article>
+          <article class="folder" onclick="toggleFolder(this)">
+            <header class="folder-tab">
+              <span class="folder-tab-dot"></span>005
+            </header>
+            <div class="folder-body">
+              <span class="folder-bg">Script Fighter</span>
+              <p class="folder-num">PROJ — 005</p>
+              <h3 class="folder-name">Script<br />Fighter</h3>
+              <div class="skill-chips project-chips">
+                <span class="skill-chip"><i class="dot"></i>Javascript</span>
+                <span class="skill-chip"><i class="dot"></i>Node.js</span>
+                <span class="skill-chip"><i class="dot"></i>Phaser</span>
+                <span class="skill-chip"><i class="dot"></i>Vite</span>
+              </div>
+              <p class="folder-desc">
+                Un jeu similaire à Street Fighter, sur le thème du Bushido
+                revisité.
+              </p>
+              <a
+                class="folder-link"
+                href="https://afabien9.itch.io/script-fighter"
+                target="_blank"
+                >Voir →</a
+              >
+            </div>
+          </article>
         </div>
+      </section>
 
-        
+      <section id="contact" class="contact-section">
+        <header class="section-header">
+          <p>03</p>
+          <h2>Contact</h2>
+          <hr class="section-rule" />
+        </header>
+        <div class="contact-inner">
+          <aside class="contact-left">
+            <p class="contact-tagline">
+              Un projet. Une idée. <br /><span>Écrivez-moi.</span>
+            </p>
+            <nav class="contact-links">
+              <a
+                href="mailto:kenzo.trindade@gmail.com"
+                class="contact-link-row"
+              >
+                <span class="contact-link-label">Email</span
+                ><span class="contact-link-arrow">→</span
+                ><span class="contact-link-value"
+                  >kenzo.trindade@gmail.com</span
+                >
+              </a>
+              <a
+                href="https://github.com/kenzotrindade"
+                target="_blank"
+                class="contact-link-row"
+              >
+                <span class="contact-link-label">GitHub</span
+                ><span class="contact-link-arrow">→</span
+                ><span class="contact-link-value"
+                  >github.com/kenzotrindade</span
+                >
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kenzo-trindade-717610386/"
+                target="_blank"
+                class="contact-link-row"
+              >
+                <span class="contact-link-label">LinkedIn</span
+                ><span class="contact-link-arrow">→</span
+                ><span class="contact-link-value"
+                  >linkedin.com/in/kenzo-trindade</span
+                >
+              </a>
+            </nav>
+          </aside>
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Nom</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Marie Dupont"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="marie@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Message..."
+                required
+              ></textarea>
+            </div>
+            <div class="form-bottom">
+              <p id="form-feedback"></p>
+              <button type="submit" class="form-submit">
+                Envoyer <span>→</span>
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Kenzo Trindade</span>
+      <span>Fait avec du code &amp; du café.</span>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
